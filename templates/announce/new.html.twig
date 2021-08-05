@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+{% block title %}Nouveau Article{% endblock %}
+
+{% block body %}
+
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ol>
+        <h2>Dolorum optio tempore voluptas dignissimos</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+
+    
+    {{ form_start(form)}}
+
+      <section id="blog" class="blog">
+      <div class="container">
+        <h1>Ajouter un Announce:</h1>
+        <div class="row">
+
+            <div class="col-lg-8 entries">
+
+              
+                <div class="reply-form">                   
+                        {{ include('announce/_form.html.twig')}}
+                        <button class="btn btn-primary">Ajouter Announce</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Section -->
+
+    {{ form_end(form)}}
+  </main><!-- End #main -->
+
+
+
+{% endblock %}

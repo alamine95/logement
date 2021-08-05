@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController{% endblock %}
+
+{% block body %}
+
+<section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ol>
+        <h2>Dolorum optio tempore voluptas dignissimos</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+<section id="blog" class="blog">
+    <div class="container">
+
+            <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Chambres</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@status</td>
+                 <td>
+                 
+                    <div class="row">
+                    <div class="read-more">
+                      <a href="">Show</a>
+                    </div>
+                    <div class="read-more">
+                      <a href="">Editer</a>
+                    </div>
+                     <div class="read-more">
+                      <a href="">Delete</a>
+                    </div>
+                </div>
+                 
+                 </td>
+                </tr>
+            </tbody>
+            </table>
+
+    </div>
+</section><!-- End Blog Section -->
+
+{% endblock %}
